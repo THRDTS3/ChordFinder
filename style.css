@@ -1,0 +1,143 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+:root {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background: white;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  color: #999;
+  position: fixed;
+  bottom: 0;
+  margin: 50px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: black;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.subtitle {
+  margin: 0;
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+button {
+  background: #fff;
+  outline: none;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 0.9;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+
+  &:hover {
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px, -4px);
+  }
+  
+  &:active {
+    box-shadow: 2px 2px 0 #000;
+    transition-duration: 0.03s;
+    transform: translate(-2px, -2px);
+  }
+
+  &.long {
+    width: 107px;
+  }
+}
+
+#play:hover{
+  background-color: #daffda;
+}
+
+#reset:hover{
+  background-color: #ffdada;
+}
+
+.key {
+
+  &.bottom {
+    color: #000;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  &.pressed {
+    background: #aaa;
+  }
+}
+
+.blankkey {
+  height: 50px;
+  width: 50px;
+}
+
+.separator {
+  margin: 0 auto;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.chord{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#chord{
+  font-size: 2.5rem;
+  
+  &:empty::before {
+    content:"";
+    display:inline-block;
+  }
+}
+
+#chord-full{
+  font-size: 1rem;
+  
+  &:empty::before {
+    content:"";
+    display:inline-block;
+    color:#999;
+  }
+}

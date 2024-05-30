@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://unpkg.com/tone"></script>
+    <title>코드 탐색기</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="title">Chord Finder™</h1>
+        <p class="subtitle">
+            <span>아래 건반에 찾고 싶은</span>
+            <span>코드의 음을 입력하세요</span>
+        </p>
+
+        <span id="name"></span>
+        <div class="rows">
+            <div class="keys">
+                <button class="key" note="Db4" num="2" name="C#">C#⠀<br>⠀Db</button>
+                <button class="key" note="Eb4" num="4" name="D#">D#⠀<br>⠀Eb</button>
+                <div class="blankkey"></div>
+                <button class="key" note="Gb4" num="7" name="F#">F#⠀<br>⠀Gb</button>
+                <button class="key" note="Ab4" num="9" name="G#">G#⠀<br>⠀Ab</button>
+                <button class="key" note="Bb4" num="11" name="A#">A#⠀<br>⠀Bb</button>
+                <div class="blankkey"></div>
+                <button class="key" note="Db5" num="14" name="C#">C#⠀<br>⠀Db</button>
+                <button class="key" note="Eb5" num="16" name="D#">D#⠀<br>⠀Eb</button>
+                <div class="blankkey"></div>
+                <button class="key" note="Gb5" num="19" name="F#">F#⠀<br>⠀Gb</button>
+                <button class="key" note="Ab5" num="21" name="G#">G#⠀<br>⠀Ab</button>
+                <button class="key" note="Bb5" num="23" name="A#">A#⠀<br>⠀Bb</button>
+            </div>
+            <div class="keys">
+                <button class="key bottom" note="C4" num="1" name="C">C</button>
+                <button class="key bottom" note="D4" num="3" name="D">D</button>
+                <button class="key bottom" note="E4" num="5" name="E">E</button>
+                <button class="key bottom" note="F4" num="6" name="F">F</button>
+                <button class="key bottom" note="G4" num="8" name="G">G</button>
+                <button class="key bottom" note="A4" num="10" name="A">A</button>
+                <button class="key bottom" note="B4" num="12" name="B">B</button>
+                <button class="key bottom" note="C5" num="13" name="C">C</button>
+                <button class="key bottom" note="D5" num="15" name="D">D</button>
+                <button class="key bottom" note="E5" num="17" name="E">E</button>
+                <button class="key bottom" note="F5" num="18" name="F">F</button>
+                <button class="key bottom" note="G5" num="20" name="G">G</button>
+                <button class="key bottom" note="A5" num="22" name="A">A</button>
+                <button class="key bottom" note="B5" num="24" name="B">B</button>
+            </div>
+            <div class="keys">
+                <button class="long" id="play">Play</button>
+                <div class="separator"></div>
+                <button class="long" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="chord">
+        <span id="chord"></span>
+        <span id="chord-full"></span>
+    </div>
+
+    <div class="footer">
+        <span>20624 최규찬</span>
+        <br>
+        <span>2024 과학과제연구</span>
+        <br>
+        <span>Pusan Puhung High Schol 2024 Laboratory Research</span>
+    </div>
+</body>
+
+</html>
