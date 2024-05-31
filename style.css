@@ -21,6 +21,8 @@ button {
   position: fixed;
   bottom: 0;
   margin: 50px;
+
+  keyframes: all linear 1s;
 }
 
 .title {
@@ -30,6 +32,14 @@ button {
   margin-bottom: 0.5rem;
 }
 
+@keyframes title{
+  100%,0%{
+      font-weight: 20;
+  }
+  50%{
+    font-weight: 500;
+}
+}
 
 .subtitle {
   margin: 0;
