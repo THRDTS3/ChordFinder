@@ -83,6 +83,8 @@ function getSus(diff) {
         case '2,1,4': return ['madd2', 'Minor Triad Add 2'];
         case '4,1,2': return ['add4', 'Major Triad Add 4'];
         case '3,2,2': return ['madd4', 'Minor Triad Add 4'];
+        case '4,3,7': return ['add9', 'Major Triad Add 9'];
+        case '3,4,7': return ['madd9', 'Minor Triad Add 9'];
 
         case '4,3,2': return ['6', 'Major 6th'];
         case '3,4,2': return ['m6', 'Minor 6th'];
