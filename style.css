@@ -144,10 +144,10 @@ button {
 
 #chord-full{
   font-size: 1rem;
+    color:#999;
   
   &:empty::before {
     content:"";
     display:inline-block;
-    color:#999;
   }
 }
