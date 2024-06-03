@@ -135,6 +135,7 @@ button {
 
 #chord{
   font-size: 2.5rem;
+  font-weight: 200
 
   &:empty::before {
     content:"";
@@ -144,10 +145,12 @@ button {
 
 #chord:first-letter {
   font-size: 5rem;
+  font-weight: 100
 }
 
 #chord-full{
   font-size: 1rem;
+  font-weight: 400
     color:#999;
   
   &:empty::before {
