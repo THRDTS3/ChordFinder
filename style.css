@@ -135,11 +135,15 @@ button {
 
 #chord{
   font-size: 2.5rem;
-  
+
   &:empty::before {
     content:"";
     display:inline-block;
   }
+}
+
+#chord:first-letter {
+  font-size: 5rem;
 }
 
 #chord-full{
