@@ -145,13 +145,13 @@ button {
 
 #chord:first-letter {
   font-size: 5rem;
-  font-weight: 100
+  font-weight: 150
 }
 
 #chord-full{
   font-size: 1rem;
   font-weight: 400
-    color:#999;
+  color:#999;
   
   &:empty::before {
     content:"";
